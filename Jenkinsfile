@@ -57,9 +57,6 @@ pipeline {
                     expression { params.deployToStage == 'yes'}
                     expression { params.deployToProd == 'yes'}
                 }
-                expression {
-                    return params.BUILD
-                }
             }
             steps {
                 script {
