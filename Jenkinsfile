@@ -112,5 +112,16 @@ pipeline {
                 sh "docker build --no-cache -t  ${env.IMAGE_NAME}:${GIT_COMMIT} ."
             }
         }
+        stage ('Push Image') {
+            when {
+                expression { params.dockerPush == 'yes'}
+            }
+            steps {
+                echo "********************************* Docker Login *****************************"
+                sh "docker login -u ${env.REGISTRY_CREDENTIALS_ID_USR} -p ${env.REGISTRY_CREDENTIALS_ID_PSW} ${env.REGISTRY_URL}"
+                echo "********************************* Docker Push *****************************"
+                sh "docker push ${env.IMAGE_NAME}:${GIT_COMMIT}"
+            }
+        }
     }
 }
