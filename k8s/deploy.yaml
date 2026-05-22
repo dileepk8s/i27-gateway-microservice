@@ -25,3 +25,6 @@ spec:
             requests:
               memory: "128Mi"
               cpu: "100m"
+          envFrom:
+          - configMapRef:
+              name: i27-helpdesk-gateway-cm
