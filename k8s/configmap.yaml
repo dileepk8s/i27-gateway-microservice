@@ -8,7 +8,8 @@ data:
   UI_ORIGIN: "34.86.168.219:32320"
   # UI_ORIGIN: "dev.i27helpdesk.in"
   #AUTH_SERVICE_URL: "34.86.232.187:8081"
-  AUTH_SERVICE_URL: "http:///i27-helpdesk-auth.${NAMESPACE}.sv.cluster.local"
+  # Service DNS names: http://<service-name>.<namespace>.svc.cluster.local
+  AUTH_SERVICE_URL: "http:///i27-helpdesk-auth.${NAMESPACE}.svc.cluster.local"
   TICKET_SERVICE_URL: "http://35.188.183.52:8082"
   COMMENT_SERVICE_URL: "http://35.188.183.52:8083"
   ATTACHMENT_SERVICE_URL: "http://localhost:8085"
