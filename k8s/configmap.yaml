@@ -11,9 +11,9 @@ data:
   #AUTH_SERVICE_URL: "34.86.232.187:8081"
   # Service DNS names: http://<service-name>.<namespace>.svc.cluster.local
   AUTH_SERVICE_URL: "http:///i27-helpdesk-auth.${NAMESPACE}.svc.cluster.local"
-  TICKET_SERVICE_URL: "http://35.188.183.52:8082"
-  COMMENT_SERVICE_URL: "http://35.188.183.52:8083"
-  ATTACHMENT_SERVICE_URL: "http://localhost:8085"
+  TICKET_SERVICE_URL: "http://i27-helpdesk-ticket.${NAMESPACE}.svc.cluster.local"
+  COMMENT_SERVICE_URL: "http://i27-helpdesk-comment.${NAMESPACE}.svc.cluster.local"
+  ATTACHMENT_SERVICE_URL: "http://i27-helpdesk-attachment.${NAMESPACE}.svc.cluster.local"
 
 
 # http://34.86.232.187:32320/
