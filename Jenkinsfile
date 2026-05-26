@@ -64,7 +64,7 @@ pipeline {
         // Kubernetes Prod Cluster Details 
         PROD_CLUSTER_NAME = "np-cluster"
         PROD_CLUSTER_ZONE = "us-east4-a"
-        PROD_PROJECT_ID = "dileepk8s-495003"
+        PROD_PROJECT_ID = "project-fe6816d0-c7fc-4c9b-bd7"
 
  
     }
