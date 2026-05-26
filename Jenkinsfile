@@ -41,29 +41,30 @@ pipeline {
         // Currently i am using docker hub registry
         REGISTRY_URL = "docker.io"
         // later u changed to jfrog ====> jfrog.hsbc.com
-        IMAGE_REPOSITORY = "devopswithcloudhub/i27-helpdesk-gateway"
+        IMAGE_REPOSITORY = "dileepdocker5535/i27-helpdesk-gateway"
         // calling my docker creds into a variable
-        REGISTRY_CREDENTIALS_ID = credentials('docker-credentials')
+        REGISTRY_CREDENTIALS_ID = credentials('docker_creds')
+         // Kubernetes Dev Cluster Details
 
         // Kubernetes Dev Cluster Details 
         DEV_CLUSTER_NAME = "np-cluster"
         DEV_CLUSTER_ZONE = "us-east4-a"
-        DEV_PROJECT_ID = "project-fe6816d0-c7fc-4c9b-bd7"
+        DEV_PROJECT_ID = "dileepk8s-495003"
 
         // Kubernetes Test Cluster Details 
         TEST_CLUSTER_NAME = "np-cluster"
         TEST_CLUSTER_ZONE = "us-east4-a"
-        TEST_PROJECT_ID = "project-fe6816d0-c7fc-4c9b-bd7"
+        TEST_PROJECT_ID = "dileepk8s-495003"
 
         // Kubernetes Stage Cluster Details 
         STAGE_CLUSTER_NAME = "np-cluster"
         STAGE_CLUSTER_ZONE = "us-east4-a"
-        STAGE_PROJECT_ID = "project-fe6816d0-c7fc-4c9b-bd7"
+        STAGE_PROJECT_ID = "dileepk8s-495003"
 
         // Kubernetes Prod Cluster Details 
         PROD_CLUSTER_NAME = "np-cluster"
         PROD_CLUSTER_ZONE = "us-east4-a"
-        PROD_PROJECT_ID = "project-fe6816d0-c7fc-4c9b-bd7"
+        PROD_PROJECT_ID = "dileepk8s-495003"
 
  
     }
